@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina - Volumetric Light Art</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="info">
+            <h1>Lumina</h1>
+            <p>Inspired by Anthony McCall's "Line Describing a Cone"</p>
+            <div class="controls">
+                <label>
+                    <input type="checkbox" id="autoRotate" checked> Auto Rotate
+                </label>
+                <label>
+                    Fog Density: <input type="range" id="fogDensity" min="0" max="100" value="50">
+                </label>
+                <label>
+                    Animation Speed: <input type="range" id="animSpeed" min="0" max="100" value="30">
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Three.js from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
